@@ -1,15 +1,14 @@
-import { Container, Row, Col, Nav, Dropdown } from "react-bootstrap";
 import "./bootstrap.min.css";
 import "./App.css";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 import React from "react";
+import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
+
 import GemSearch from "./components/GemSearch";
 import LabImage from "./components/LabImage";
-
 import Menu from "./components/Menu";
-import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
 import Heist from "./components/Heist";
 import Syndicate from "./components/Syndicate";
-import { NavLink, NavItem } from "react-bootstrap";
 import Racing from "./components/Racing";
 
 function App() {
