@@ -27,10 +27,10 @@ function App() {
           className="mb-2 justify-evenly"
           fill
           variant="tabs"
-          defaultActiveKey="/poe/lab"
+          defaultActiveKey="/"
         >
-          <Nav.Item href="/poe/lab">
-            <Nav.Link eventKey="link-1" as={Link} to="/poe/lab">
+          <Nav.Item href="/">
+            <Nav.Link eventKey="link-1" as={Link} to="/">
               Daily Labyrinth
             </Nav.Link>
           </Nav.Item>
@@ -51,7 +51,7 @@ function App() {
           </Nav.Item>
         </Nav>
         <Routes>
-          <Route exact path="/poe/lab" element={<LabImage />}></Route>
+          <Route exact path="/" element={<LabImage />}></Route>
           <Route exact path="/poe/heist" element={<Heist />}></Route>
           <Route exact path="/poe/syndicate" element={<Syndicate />}></Route>
           <Route path="/poe/:img" element={<Racing />}></Route>
