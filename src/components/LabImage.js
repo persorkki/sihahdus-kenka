@@ -27,7 +27,7 @@ function LabImage() {
             </Col>
         </Row>
         <Row className="mt-2">
-            <Image className="expandable" src={`../${images[image]}`} fluid></Image>
+            <Image className="expandable" src={`../../lab/${images[image]}`} fluid></Image>
         </Row>
         </>
     );
