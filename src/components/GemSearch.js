@@ -15,11 +15,18 @@ function GemSearch(props) {
     if (search.length > 1) {
       setGems(
         GemData.filter(
-          (gem) =>
-            gem.Name.toLowerCase().includes(search.toLowerCase()) &&
-            !gem.Name.toLowerCase().includes("vaal")
+          (gem) => (
+            (
+              gem.Name.toLowerCase().includes(search.toLowerCase()) &&
+              !gem.Name.toLowerCase().includes("vaal")
+            ) ||
+            gem.Effect.toLowerCase().includes(search.toLowerCase()
+
+            )
+          )
         )
       );
+      
     } else {
       setGems([]);
     }
@@ -46,7 +53,7 @@ function GemSearch(props) {
       <Row className="mb-2">
         <Col>
         <ListGroup >
-        {gems.slice(0, 6).map(((gem,i) => (
+        {gems.map(((gem,i) => (
           <GemLi key={i} Name={gem.Name} Effect={gem.Effect} Weight={gem.Weight} Icon={gem.icon} />
         )))}
           </ListGroup>

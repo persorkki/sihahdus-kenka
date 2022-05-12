@@ -1,6 +1,6 @@
 import "./bootstrap.min.css";
 import "./App.css";
-import { Container, Row, Col, Nav } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
 import React from "react";
 import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
 
@@ -16,12 +16,8 @@ function App() {
     <BrowserRouter>
       <Container>
         <Menu />
-        <Row>
-          <Col>
-            <h1 className="text-primary mt-2">Sihahdus</h1>
-          </Col>
-        </Row>
-
+        <div className="mb-4">
+        </div>
         <GemSearch />
         <Nav
           className="mb-2 justify-evenly"

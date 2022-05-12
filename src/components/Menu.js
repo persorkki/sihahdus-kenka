@@ -3,7 +3,7 @@ import { Navbar, Container} from "react-bootstrap";
 function Menu() {
   return (
     <>
-      <Navbar variant="dark" bg="dark" expand="lg">
+      <Navbar variant="dark" bg="dark" expand="lg" className="mt-2">
         <Container>
           <Navbar.Brand href="#home">path of exile</Navbar.Brand>
           <Navbar.Brand href="#album">album covers</Navbar.Brand>

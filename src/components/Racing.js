@@ -12,6 +12,7 @@ function Racing() {
     useParams((params) => {
         setImage(params.img);
     }, []);
+    
     const handleClick = (event) => {
         setImage(event.target.id);
         setActiveDropdown(event.target.textContent);
