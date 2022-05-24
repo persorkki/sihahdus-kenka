@@ -47,3 +47,18 @@ Body {
 .expandable:active {
   transform: scale(1.2);
 }
+
+.image-area{
+  margin-top: 1em;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.thumb-button{
+  text-decoration: none;
+	background-color: transparent;
+  margin: 0 auto;
+  padding: 0;
+}
+

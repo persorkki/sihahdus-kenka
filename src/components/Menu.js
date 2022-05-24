@@ -5,10 +5,9 @@ function Menu() {
     <>
       <Navbar variant="dark" bg="dark" expand="lg" className="mt-2">
         <Container>
-          <Navbar.Brand href="#home">path of exile</Navbar.Brand>
-          <Navbar.Brand href="#album">album covers</Navbar.Brand>
-          <Navbar.Brand href="#home">random</Navbar.Brand>
-          <Navbar.Brand href="#home">crazy</Navbar.Brand>
+          <Navbar.Brand href="/">path of exile</Navbar.Brand>
+          <Navbar.Brand href="album">album covers</Navbar.Brand>
+
         </Container>
       </Navbar>
     </>
